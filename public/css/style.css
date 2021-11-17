@@ -1,0 +1,270 @@
+body {
+    font: normal 18px 'Open Sans', serif;
+}
+h1 {
+    font: bold 80px 'Bebas Neue', sans-serif;
+}
+h2 {
+    font: bold 36px 'Bebas Neue', sans-serif;
+}
+h3 {
+    font: bold 24px 'Bebas Neue', sans-serif;
+}
+.sub-text {
+    font: normal 14px 'Open Sans', serif;
+}
+button {
+    font: bold 16px 'Open Sans', serif;
+}
+nav {
+    font: bold 12px 'Open Sans', serif;
+    background-color:  rgba(0, 0, 0, 0.7);
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+/* Start: Section Main Screen */
+.main-screen {
+    background-image: url(../images/home/main-bg.jpg), linear-gradient(to right, #434343 0%, rgb(0, 0, 0) 100%) ;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    text-transform: uppercase;
+}
+.navbar li:hover {
+    border-bottom: 1px solid #fff;
+}
+nav a {
+    font-size: 0.7rem;
+}
+.content-main {
+    min-height: 89vh ;
+    letter-spacing: 0.15rem;
+}
+.content-main .sub-text {
+    position: absolute;
+    bottom: 5%;
+    animation: scroll-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll-down {
+    0% {
+      bottom: 5%;
+    }
+    50% {
+      bottom: 7.5%;
+    }
+    100% {
+      margin-top: 5%;
+    }
+  }
+.btn-warning {
+    background-color: #ffb548 !important;
+}
+
+/* Section Game Choice */
+.game-choice {
+    background-image: url(../images/home/the-games-bg.jpg), linear-gradient(to right, #434343 0%, rgb(0, 0, 0) 100%) ;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    letter-spacing: 0.15rem;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    margin: 0 1rem;
+    border-radius: 50% !important;
+    border: 1.5px solid #fff !important;
+    background-color: transparent;
+}
+.carousel-indicators .active {
+    background-color: #fff;
+}
+.prev {
+    left: -56px;
+}
+.next {
+    right: -56px;
+}
+
+/* Section Game Features */
+.game-features {
+    background-image: url(../images/home/features.jpg), linear-gradient(to right, #434343 0%, rgb(0, 0, 0) 100%) ;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+}
+.yellow-t {
+   color: #ffb548; 
+}
+.ls-0 {
+    letter-spacing: 0rem;
+}
+ul.sub-features {
+    position: relative;
+    padding: 0;
+}
+ul.sub-features::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 4px;
+    bottom: 0;
+    left: 0;
+}
+ul.sub-features .my-4 {
+    position: relative;
+    list-style: none;
+}
+ul.sub-features .my-4::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -3.5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #fff;
+    z-index: 1;
+}
+
+/* Section System Requirement */
+.requirement {
+    background-image: url(../images/home/requirements.png), linear-gradient(to right, #434343 0%, rgb(0, 0, 0) 100%) ;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+}
+.req-table tr td {
+    border: 0.1px solid rgba(255, 255, 255, 0.158);
+    padding: 1rem;
+}
+
+/* Section Top Scores */
+.top-scores {
+    background-image: url(../images/home/top-score-bg.png), linear-gradient(to right, #434343 0%, rgb(0, 0, 0) 100%) ;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.card .card-img-top {
+    position: absolute;
+    width: 3em !important;
+    height: auto;
+    top: 0.45em;
+}
+.card {
+    width: 24em;
+}
+.bg-yellow-t {
+    width: 3em;
+    height: 3em;
+    background-color: #ffb548;
+    border-radius: 50%;
+    margin-left: 0.3em;
+    margin-top: 0.1em;
+}
+
+/* Section Footer */
+.newsletter-footer{
+    background: #080a0b;
+    min-height: 100vh;
+    letter-spacing: 0.04rem;
+}
+.newsletter input {
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffb548;
+    border: none;
+    outline: none;
+    background: #232525;
+}
+.footer-1 {
+    font-family: 'Open Sans', sans-serif;
+}
+footer * .footer-2 ul li {
+    position: relative;
+    margin-left: 20px;
+}
+footer * .footer-2 ul li::before {
+    content: "|";
+    position: absolute;
+    left: -15px;
+}
+footer * .footer-2 ul li:first-child::before {
+    content: "";
+}
+
+/* Game */
+.brown-t {
+    color: #724C21;
+}
+.bg-brown-t {
+    background-color:#9C835F;
+}
+.ff-open-sans {
+    font-family: 'Open Sans', serif;
+}
+.fw-900 {
+    font-weight: 900;
+}
+.bg-gray {
+    background-color: rgba(196, 196, 196);
+}
+.hover\:bg-gray:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(196, 196, 196);
+}
+.bg-dark-green {
+    background-color: rgba(3, 91, 12);
+  }
+.rounded-4t {
+    border-radius: 1rem;
+}
+main {
+    letter-spacing: 0.1rem;
+}
+.rotate-15 {
+    transform: rotate(-15deg);
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+    .text-uppercase.fw-900 {
+        font-size: small !important;
+    }
+    #vs, #alertResult {
+        font-size: 2em;
+    }
+    #reset-game {
+        width: 15%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .result-reset {
+        flex-direction: row !important;
+        justify-content: flex-end !important;  
+        margin-top: 2rem;
+        margin-bottom: 4rem;   
+    }
+    #vs, #alertResult {
+        font-size: 2em;
+
+    }
+    #reset-game {
+        width: 10% !important;
+        margin: 0 4.5em !important;
+    }
+}

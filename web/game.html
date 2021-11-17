@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="'https://fonts.googleapis.com/css?family=Bebas Neue">
+    <link rel="stylesheet" href="'https://fonts.googleapis.com/css?family=Open Sans'">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-brown-t">
+
+    <header class="container-fluid">
+        <div class="d-flex align-items-center justify-content-start my-2">
+            <a href="../index.html" class="text-decoration-none brown-t mx-4 fs-3 fw-bolder ff-open-sans my-auto" >&lt;</a>
+            <img src="../public/images/game/logo-1.png" alt="" style="width: 2.4em;">
+            <h1 class="text-uppercase yellow-t fs-5 mx-4 my-auto">Rock Paper Scissors</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+
+            <!-- Player -->
+            <div class="col-md-2 text-center justify-content-center align-items-center">
+                <h2 class="text-uppercase col-12 fs-4 fw-900"> Player 1 </h2>
+
+                <div class="row" id="player">
+                    <div class="col-md-12 col-4 p-4 my-2 hover:bg-gray rounded-4t cursor-pointer m-auto d-flex align-items-center justify-content-center">
+                        <img src="../public/images/game/batu.png" alt="batu" class="w-50">
+                    </div>
+
+                    <div class="col-md-12 col-4 p-4 my-2 hover:bg-gray rounded-4t cursor-pointer d-flex align-items-center justify-content-center">
+                        <img src="../public/images/game/kertas.png" alt="kertas" class="w-50">
+                    </div>
+
+                    <div class="col-md-12 col-4 p-4 my-2 hover:bg-gray rounded-4t cursor-pointer d-flex align-items-center justify-content-center">
+                        <img src="../public/images/game/gunting.png" alt="gunting" class="w-50">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Result & Reset -->
+            <div class="col-md-4 text-center d-flex flex-column justify-content-between align-items-center result-reset">
+                    <div class=""></div>
+                    <h1 class="fw-900 text-danger" id="vs">VS</h1>
+                    <h3 class="d-none fw-bolder text-white text-uppercase fs-2 px-5 py-3 rounded-3 rotate-15" id="alert-result"> </h3>
+                    <img src="../public/images/game/refresh.png" alt="" class="w-25 mx-auto cursor-pointer" id="reset-game">
+            </div>
+
+            <!-- Com -->
+            <div class="col-md-2 text-center">
+
+                <h2 class="text-uppercase col-12 fs-4 fw-900"> Com </h2>
+
+                <div class="row" id="com">
+                    <div class="com col-md-12 col-4 p-4 my-2 rounded-4t d-flex align-items-center justify-content-center">
+                        <img src="../public/images/game/batu.png" alt="batu" class="w-50">
+                    </div>
+
+                    <div class="com col-md-12 col-4 p-4 my-2 rounded-4t d-flex align-items-center justify-content-center">
+                        <img src="../public/images/game/kertas.png" alt="kertas" class="w-50">
+                    </div>
+
+                    <div class="com col-md-12 col-4 p-4 my-2 rounded-4t d-flex align-items-center justify-content-center">
+                        <img src="../public/images/game/gunting.png" alt="gunting" class="w-50">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2"></div>
+        </div>
+    </main>
+    
+    <script src="../public/js/script.js"></script>
+    
+</body>
+</html>
